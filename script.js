@@ -1,0 +1,11 @@
+function generateRandomNumber (min, max){
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+function generateRandomColor (){
+  var r = generateRandomNumber(0, 255);
+  var g = generateRandomNumber(0, 255);
+  var b = generateRandomNumber(0, 255);
+if (r === 255 && g === 255 && b === 255){ generateRandomColor();}
+return "rgb(" + r + ", " + g + ", " + b +")";
+}
